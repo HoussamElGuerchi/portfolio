@@ -20,6 +20,10 @@ section {
     padding: 7% 15%;
 }
 
+label {
+    color: #212121;
+}
+
 .custom-btn {
     color: #F86378;
     border: 1px solid #F86378;
@@ -29,6 +33,10 @@ section {
     color: #212121;
     background-color: #F86378;
     border: 1px solid #F86378;
+}
+
+.center {
+    text-align: center;
 }
 
 /* Home section */
@@ -61,9 +69,54 @@ section {
 .card-content {
     background-color: #ffffff;
     margin: 5% 3%;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #about p, #about ul {
     color: #212121;
 }
+
+/* Skills section */
+
+#skills {
+    text-align: center;
+}
+
+.skills-card {
+    text-align: left;
+    background-color: #272727;
+    margin: 2% 2.2%;
+    border-radius: 15px; 
+}
+
+.skills-card h3 {
+    color: #F86378;
+}
+
+/* Contact section */
+
+#contact {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+/* Footer section */
+
+#footer {
+    text-align: center;
+}
+
+.social-icon {
+    padding: 2% 5%;
+    color: #F86378;
+}
+
+@media (max-width: 767px) {
+    .intro {
+        margin-bottom: 15%;
+        text-align: center
+    }
+
+    .intro-isodev {
+        text-align: center;
+    }
+ }

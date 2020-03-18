@@ -7,8 +7,8 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="/scripts/bootstrap.bundle.js"></script>
-    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -27,11 +27,11 @@
         <nav class="navbar navbar-expand-lg navbar-dark mb-5">
             <a class="navbar-brand portfolio-title" href="index.html">HoussamElgu</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navigation">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link " href="#home">Home</a>
@@ -52,14 +52,14 @@
         
         <div class="container home-content">
             <div class="row">
-                <div class="col-md-8 mt-3">
+                <div class="col-md-8 mt-3 intro">
                     <div class="pt-5">
-                        <h1>Hi, I'm Houssam El Guerchi</h1>
+                        <h1>Hey, I'm Houssam El Guerchi</h1>
                         <h3 class="mt-3">a full stack &lt;/web developer&gt;.</h3>
-                        <a class="btn rounded-0 mt-4 custom-btn" href="#" download="">Resume</a>
+                        <a class="btn rounded-0 mt-4 custom-btn" href="resume.pdf" target="blank">Resume</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 intro-isodev">
                     <img src="images/computer@2x.png" class="isodev" alt="">
                 </div>
             </div>
@@ -98,46 +98,70 @@
 
     <!-- Skills section -->
     <section id="skills">
-        
+        <h1 class="mb-4">Tech Skills</h1>
+        <div class="skills-content">
+            <div class="row">
+                <div class="col-md-6 p-4 skills-card">
+                    <h3>Front-End</h3>
+                    <p>HTML, CSS, Bootstrap, JavaScript and JQuery</p>
+                </div>
+                <div class="col p-4 skills-card">
+                    <h3>Back-End</h3>
+                    <p>NodeJS, ExpressJS, PHP and Java</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-4 skills-card">
+                    <h3>Database</h3>
+                    <p>MySQL, Oracle and MongoDB</p>
+                </div>
+                <div class="col-md-6 p-4 skills-card">
+                    <h3>Others</h3>
+                    <p>Git, npm, Firebase Adobe Illustrator and XD</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact section -->
     <section id="contact">
-        <h1>Contact</h1>
-        <div class="container">
-            <form action="mailto:someone@example.com" class="">
-                <div class="form-group">
-                    <label for="">Name :</label>
-                    <input type="text" name="contactName" class="form-control input-form" required>
-                </div>
-                <div class="form-group">
-                    <label for="">Email :</label>
-                    <input type="mail" name="contactEmail" class="form-control input-form" required>
-                </div>
-                <div class="form-group">
-                    <label for="">Object :</label>
-                    <input type="text" name="contactObject" class="form-control input-form" required>
-                </div>
-                <div class="form-group">
-                    <label for="">Description :</label>
-                    <textarea class="form-control input-form" name="contactMessage" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div style="text-align: center">
-                    <button class="btn rounded-0 custom-btn-dark" type="submit">Submit</button>
-                </div>
-            </form>
+        <div class="card-content p-4">
+            <h1 class="center mb-4">Contact</h1>
+            <div class="container">
+                <form action="mailto:someone@example.com" class="">
+                    <div class="form-group">
+                        <label for="">Name :</label>
+                        <input type="text" name="contactName" class="form-control input-form" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email :</label>
+                        <input type="mail" name="contactEmail" class="form-control input-form" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Object :</label>
+                        <input type="text" name="contactObject" class="form-control input-form" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Description :</label>
+                        <textarea class="form-control input-form" name="contactMessage" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div style="text-align: center">
+                        <button class="btn rounded-0 custom-btn" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer section -->
     <section>
-        <div class="p-5">
-            <a href="https://www.linkedin.com/in/houssam-el-guerchi-2ab867158/" target="blank"><i class="fab fa-linkedin-in soscial-icon"></i></a>
-            <a href="https://github.com/HoussamElgu" target="blank"><i class="fab fa-github soscial-icon"></i></a>
-            <a href="https://www.facebook.com/houssam.elguerchi" target="blank"><i class="fab fa-facebook-f soscial-icon"></i></a>
-            <a href=""> <i class="fab fa-instagram soscial-icon" target="blank"></i></a>
+        <div class="center mb-4">
+            <a href="https://www.linkedin.com/in/houssam-el-guerchi-2ab867158/" target="blank"><i class="fab fa-linkedin-in social-icon"></i></a>
+            <a href="https://github.com/HoussamElgu" target="blank"><i class="fab fa-github social-icon"></i></a>
+            <a href="https://www.facebook.com/houssam.elguerchi" target="blank"><i class="fab fa-facebook-f social-icon"></i></a>
+            <a href=""> <i class="fab fa-instagram social-icon" target="blank"></i></a>
         </div>
-        <p>© Copyright 2020. All rights reserved.</p>
+        <p class="center">© Copyright 2020. All rights reserved.</p>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
